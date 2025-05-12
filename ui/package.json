@@ -18,10 +18,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "webpack serve --config ./webpack.config.js --mode development",
+    "build": "webpack --config ./webpack.config.js",
+    "test": "echo \"No test specified\" && exit 1"
   },
   "eslintConfig": {
     "extends": [
@@ -42,8 +41,11 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^4.0.11"
+    "autoprefixer": "10.4.20",
+    "postcss": "8.5.3",
+    "tailwindcss": "4.0.11",
+    "webpack-cli": "6.0.1",
+    "ts-loader": "9.0.0",
+    "ts-node": "^10.9.2"
   }
 }

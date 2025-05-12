@@ -55,7 +55,7 @@ async function getSubcategories(url) {
     return subcategories;
 }
 
-async function main() {
+export async function main() {
     try {
         await page.goto("https://www.al-islam.org");
 
